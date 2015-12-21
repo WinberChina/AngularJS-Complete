@@ -7,8 +7,8 @@ app.controller("MyController", function($scope) {
 		$scope.clock.now = new Date();
 	};
 	setInterval(function() {
-		// $scope.$apply(updateClock);
-		updateClock();
+		$scope.$apply(updateClock);
+		// updateClock();
 	}, 1000);
 	updateClock();
 });
